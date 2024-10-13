@@ -2,7 +2,7 @@
 
 Este projeto é um carrinho controlado remotamente por um console de PS2 via rádio frequência. A parte eletrônica é formada por dois módulos. O transmissor e o receptor, ambos baseados em arduino nano e a transmissão é via módulo NRF24L01 em frequência de 2.4GHz.
 
-Este projeto foi inspirado no canal do YouTube [Arduino para Modelismo](https://www.youtube.com/@ArduinoParaModelismo/featured) na [página oficial](https://arduinoparamodelismo.com/).
+Este projeto foi inspirado no canal do YouTube [Arduino para Modelismo](https://www.youtube.com/@ArduinoParaModelismo/featured) na [página oficial](https://arduinoparamodelismo.com/) do nosso amigo Aldeir Moreira, especialista em Automação de Miniaturas com Arduino e ESP32.
 
 ## Transmissor
 
