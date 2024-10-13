@@ -6,9 +6,35 @@ Este projeto é um carrinho controlado remotamente por um console de PS2 via rá
 
 Na pasta transmissor há o código responsável pela transmissão dos dados. 
 
+#### Ligações elétricas do transmissor
+
+| Arduino Nano | Módulo |
+| ----- | ----- |
+| VIN | Alimentação 7.2VCC |
+| GND | NRF24LN01 GND |
+| 3V3 | NRF24LN01 3V3 |
+| D10 | NRF24LN01 CSN |
+| D9 | NRF24LN01 CE |
+| MOSI (D11) | NRF24LN01 MOSI |
+| MISO (D12) | NRF24LN01 MISO |
+| SCK (D13) | NRF24LN01 SCK CLK |
+
 ## Receptor
 
 Na pasta receptor há o código responsável pela recepção dos dados e conversão dos dados recebidos em comandos para controle do motor DC DG01D-A130 com caixa de redução. O eixo direcional é realizado pelo micro-servo 9g.
+
+#### Ligações elétricas do receptor
+
+| Arduino Nano | Módulo |
+| ----- | ----- |
+| VIN | Alimentação 7.2VCC |
+| GND | NRF24LN01 GND |
+| 3V3 | NRF24LN01 3V3 |
+| D10 | NRF24LN01 CSN |
+| D9 | NRF24LN01 CE |
+| MOSI (D11) | NRF24LN01 MOSI |
+| MISO (D12) | NRF24LN01 MISO |
+| SCK (D13) | NRF24LN01 SCK CLK |
 
 
 ### Arduino Nano
@@ -17,6 +43,7 @@ Na pasta receptor há o código responsável pela recepção dos dados e convers
 
 <img src="/assets/images/arduino-nano-pinout.png">
 
+Especificações técnicas:
 | Item | Valor |
 | -----| ----- |
 | Microcontrolador | ATmega328P |
@@ -37,6 +64,9 @@ O Módulo Wireless Nrf24l01 + Antena 1Km é ideal para muitas aplicações que r
 
 <img src="/assets/images/nrf24l01-antena-1km.jpg">
 
+<img src="/assets/images/nrf24l01-pinagem.jpg">
+
+Especificações técnicas:
 | Item  | Valor |
 | ----- | ----- |
 | Tensão | 3.3V-3.6V (recomendado 3.3V) |
@@ -64,6 +94,7 @@ O Módulo Wireless Nrf24l01 + Antena 1Km é ideal para muitas aplicações que r
 
 <img src="/assets/images/motor-dc-3a6v.png">
 
+Especificações técnicas:
 | Item | Valor |
 | -----| ----- |
 | Variação de tensão | 3 ~ 6V |
@@ -79,6 +110,7 @@ O Módulo Wireless Nrf24l01 + Antena 1Km é ideal para muitas aplicações que r
 
 <img src="/assets/images/micro-servo-9g.png">
 
+Especificações técnicas:
 | Item | Valor |
 | -----| ----- |
 | Voltagem de Operação | 3,0 – 7,2v |
