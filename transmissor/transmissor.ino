@@ -89,7 +89,9 @@ void inicializarRadio(){
   radio.begin();
   radio.setChannel(5);
   radio.setDataRate(RF24_250KBPS); // RF24_1MBPS, RF24_2MBPS, RF24_250KBPS
-  radio.setPALevel(RF24_PA_MIN);
+  //radio.setPALevel(RF24_PA_MIN);
+  radio.setPALevel(RF24_PA_HIGH);
+  radio.setAutoAck(false);
   //radio.setPALevel(RF24_PA_HIGH);
   radio.stopListening();
   radio.openWritingPipe(0x1234567890L);

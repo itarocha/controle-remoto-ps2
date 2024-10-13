@@ -59,8 +59,9 @@ void inicializarRadio(){
   radio.begin();
   radio.setChannel(5); // 0..127
   radio.setDataRate(RF24_250KBPS); // RF24_1MBPS, RF24_2MBPS, RF24_250KBPS
-  radio.setPALevel(RF24_PA_MIN);
-  //radio.setPALevel(RF24_PA_HIGH);
+  //radio.setPALevel(RF24_PA_MIN);
+  radio.setPALevel(RF24_PA_HIGH);
+  radio.setAutoAck(false);
   radio.openReadingPipe(1, 0x1234567890L);
   radio.startListening();
   Serial.print("Radio inicializado");
