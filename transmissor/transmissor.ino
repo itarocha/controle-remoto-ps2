@@ -17,9 +17,7 @@
  *   - rumble    = motor rumbling
  * uncomment 1 of the lines for each mode selection
  ******************************************************************/
-//#define pressures   true
 #define pressures   false
-//#define rumble      true
 #define rumble      false
 
 #define BT_START      1000
@@ -248,7 +246,6 @@ void updateState(unsigned int bt, boolean newValue){
     case BT_SELECT:
       state.btSELECT = newValue;
       break;
-
     case BT_L1:
       state.btL1 = newValue;
       break;
@@ -267,7 +264,6 @@ void updateState(unsigned int bt, boolean newValue){
     case BT_R3:
       state.btR3 = newValue;
       break;
-
     case BT_UP:
       state.btUP = newValue;
       break;
@@ -280,7 +276,6 @@ void updateState(unsigned int bt, boolean newValue){
     case BT_RIGHT:
       state.btRIGHT = newValue;
       break;
-
     case BT_TRIANGLE:
       state.btTRIANGLE = newValue;
       break;

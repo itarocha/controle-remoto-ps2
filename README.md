@@ -130,6 +130,42 @@ Dados Técnicos:
 - Peso: 20g
 
 
+### Mini Ponte H L298N
+
+<img src= "/assets/images/mini-ponte-h-l298n.jpg">
+
+O Mini Driver Motor Ponte H L298n é um módulo construído para controlar cargas indutivas como relés, solenoides, motores DC e motores de passo. Com este driver é possível acionar até 2 motores DC ou 1 motor de passo.
+
+Principais características:
+
+- Dimensão reduzida
+- Corrente máxima total de 2,5A (1,5 por canal)
+
+Especificações técnicas:
+- Tensão de Operação: entre 2 V e 10 V
+- Chip: ST L298N (datasheet)
+- Controle de 2 motores DC ou 1 motor de passo
+- Corrente de Operação máxima: 1,5 A por canal ou 2,5 A max
+- Tensão lógica: entre 2 V e 7 V
+- Corrente em standby: menor que 0,1 uA
+- Dimensões: 25 mm  x 21 mm x 7 mm
+- Peso: 3 g aproximadamente
+
+Utilização:
+| IN1  | IN2  | MOTOR A |
+| ---  | ---  | --- |
+| LOW  | LOW  | Parado |
+| HIGH | LOW  | Sentido Horário |
+| LOW  | HIGH | Antiorário |
+| HIGH | HIGH | Parado |
+
+| IN3  | IN4  | MOTOR B |
+| ---  | ---  | --- |
+| LOW  | LOW  | Parado |
+| HIGH | LOW  | Sentido Horário |
+| LOW  | HIGH | Antiorário |
+| HIGH | HIGH | Parado |
+
 ### Motor DG01D-A130
 
 <img src="/assets/images/motor-dc-3a6v.png">
